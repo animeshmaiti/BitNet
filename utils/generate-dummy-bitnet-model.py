@@ -956,8 +956,8 @@ class BitnetModel(Model):
 ftype_map = {
     "f32": gguf.GGMLQuantizationType.F32,
     "f16": gguf.GGMLQuantizationType.F16,
-    "tl1" : gguf.GGMLQuantizationType.TL1,
-    "tl2" : gguf.GGMLQuantizationType.TL2,
+    "tl1" : gguf.GGMLQuantizationType.Q4_1,
+    "tl2" : gguf.GGMLQuantizationType.Q8_0,
 }
 
 def main() -> None:
